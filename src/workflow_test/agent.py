@@ -111,7 +111,6 @@ def describe(block: ToolUseBlock) -> str:
     """One-line summary of a tool call, showing what it acts on."""
     args = block.input
     detail = args.get("command") or args.get("file_path") or args.get("pattern") or ""
-    print(block)
     return f"{block.name} {detail}".strip()
 
 
